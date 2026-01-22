@@ -1,0 +1,130 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #140712;
+}
+
+.label {
+    -fx-text-fill: #ffe6f3;
+}
+
+.button {
+    -fx-background-color: #ff4da6;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-padding: 8 14 8 14;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #ff2f97;
+}
+
+.combo-box, .text-field {
+    -fx-background-color: #241021;
+    -fx-text-fill: #ffe6f3;
+    -fx-background-radius: 10;
+    -fx-border-color: #ff4da6;
+    -fx-border-radius: 10;
+}
+
+.table-view {
+    -fx-background-color: #1a0b16;
+    -fx-control-inner-background: #1a0b16;
+    -fx-table-cell-border-color: #3a1731;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #2a0f23;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #ffb3d9;
+    -fx-font-weight: bold;
+}
+
+.chart-title {
+    -fx-text-fill: #ffb3d9;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.axis-label {
+    -fx-text-fill: #ffe6f3;
+}
+
+.axis {
+    -fx-tick-label-fill: #ffe6f3;
+}
+/* --- Dark Analytics background (fixes the white ScrollPane viewport) --- */
+
+.analytics-root {
+    -fx-background-color: #120816; /* deep purple */
+}
+
+.analytics-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.analytics-scroll > .viewport {
+    -fx-background-color: #120816; /* MUST be set, this is the white area */
+}
+
+.analytics-scroll .scroll-bar:vertical,
+.analytics-scroll .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.analytics-scroll .scroll-bar .track {
+    -fx-background-color: rgba(255, 105, 180, 0.10); /* soft pink track */
+    -fx-background-radius: 10;
+}
+
+.analytics-scroll .scroll-bar .thumb {
+    -fx-background-color: rgba(255, 105, 180, 0.45); /* pink thumb */
+    -fx-background-radius: 10;
+}
+/* Compare tab headers */
+.compare-header {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+}
+
+.compare-row-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-padding: 8 0 0 0;
+}
+
+/* Metric cards */
+.metric-card {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+}
+
+.metric-card-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+}
+
+.metric-card-value {
+    -fx-font-size: 22px;
+    -fx-font-weight: 800;
+}
+
+.metric-card-sub {
+    -fx-font-size: 12px;
+    -fx-opacity: 0.9;
+}
+
+/* Green if above/equal global avg */
+.metric-good {
+    -fx-background-color: rgba(0, 180, 90, 0.25);
+}
+
+/* Red if below global avg */
+.metric-bad {
+    -fx-background-color: rgba(220, 30, 60, 0.25);
+}
